@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'RedHatDisplay',sans-serif;
+}
+h2{
+    color:var(--dark-blue);
+    font-family: 'RedHatDisplay',sans-serif;
+    font-weight: 900;
+}
+#main-image{
+  width:100%;
+  border-radius:1rem 1rem 0 0;
+}
+.container{
+    background-color: white;
+    margin-top:5rem;
+    width: 24rem;
+    height: 33rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 5px var(--pale-blue);
+}
+.main{
+    width:18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:2rem;
+}
+.container p{
+    margin-top:1rem;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+.price{
+    margin-top:1rem;
+    font-weight: 500;
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:var(--desaturated-blue);
+}
+.sub{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.amount{
+    transform:translate(-17px,0px);
+}
+.success{
+    margin-top:1rem;
+    font-weight: 700;
+    background-color: var(--bright-blue);
+    border:none;
+    padding:0.5rem;
+    border-radius:1rem;
+    color:white;
+    width: 100%;
+}
+.success:hover{
+    background-color: var(--desaturated-blue);
+    cursor: pointer;
+}
+.cancel{
+    font-weight: 700;
+    color:var(--desaturated-blue);
+    background-color: white;
+    padding:1rem;
+    border:none;
+}
+.cancel:hover{
+    cursor:pointer;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top:1rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+@media(max-width:500px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .container{
+        width:20rem;
+    }
+}
